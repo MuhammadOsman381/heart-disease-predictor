@@ -1114,7 +1114,7 @@ function AppLoader({ error, loading, onRetry, theme, onTheme }) {
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-sm font-medium text-muted">
                 <SkeletonDot dark />
-                Checking http://localhost:8000/
+                Checking server
               </div>
               <div className="space-y-2">
                 <div className="h-3 w-full overflow-hidden rounded-full bg-card">
