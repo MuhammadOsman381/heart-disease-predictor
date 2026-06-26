@@ -1,0 +1,113 @@
+# ==========================
+# General
+# ==========================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# ==========================
+# Environment Variables
+# ==========================
+.env
+.env.*
+!.env.example
+
+# ==========================
+# Vite / Node.js
+# ==========================
+node_modules/
+dist/
+build/
+.vite/
+.cache/
+
+# Package Managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Lock files (Uncomment if you don't want to commit them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ==========================
+# FastAPI / Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type Checking
+.mypy_cache/
+.pyre/
+.pytype/
+
+# Linting
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ==========================
+# FastAPI Runtime
+# ==========================
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploaded files
+uploads/
+media/
+static/uploads/
+
+# Model artifacts
+models/
+artifacts/
+
+# Logs
+logs/
+*.log
+
+# ==========================
+# Caches
+# ==========================
+.cache/
+.pytest_cache/
+.tox/
+.nox/
+
+# ==========================
+# Coverage
+# ==========================
+coverage/
+coverage.xml
+
+# ==========================
+# OS Files
+# ==========================
+Desktop.ini
