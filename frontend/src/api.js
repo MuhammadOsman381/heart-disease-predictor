@@ -16,7 +16,7 @@ async function parseResponse(response) {
 }
 
 export async function fetchHealth() {
-  const response = await fetch(`${API_BASE}/`);
+  const response = await fetch(`${API_BASE}/api/health`);
   const data = await parseResponse(response);
   if (data.status !== "ok") {
     throw new Error("Backend health check did not return ok status.");

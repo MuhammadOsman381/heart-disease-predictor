@@ -96,7 +96,7 @@ function App() {
     return () => window.removeEventListener("popstate", onRouteChange);
   }, []);
 
-  async function checkBackend() {
+  async function fetchHealth() {
     setBootLoading(true);
     setBootError("");
     try {
