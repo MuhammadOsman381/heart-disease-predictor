@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://heart-disease-predictor-drzq.onrender.com";
 
 async function parseResponse(response) {
   const contentType = response.headers.get("content-type") || "";
@@ -16,7 +16,7 @@ async function parseResponse(response) {
 }
 
 export async function fetchHealth() {
-  const response = await fetch(`${API_BASE}/api/health`);
+  const response = await fetch(`${API_BASE}/`);
   const data = await parseResponse(response);
   if (data.status !== "ok") {
     throw new Error("Backend health check did not return ok status.");
